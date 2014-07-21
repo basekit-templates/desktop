@@ -1,0 +1,74 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+  <div class="widgetheader clearfix">
+      <div class="wrapper">
+          <div class="left">
+              {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+          </div>
+          <div class="right">
+              {{widget('content', 'textwidgetbox1', {content: '<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut"</p>', lines: 'all'})|raw}}
+          </div>
+      </div>
+  </div>
+
+<header class="bk-header clearfix">
+    <div class="wrapper">
+        <div class="logo">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "DESKTOP"})|raw}}
+        </div>
+    </div>
+</header> 
+
+<div class="navbar wrapper clearfix">
+    <div class="wrapper">
+        {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+    </div>
+</div>
+
+<section>
+    {{widget('responsiveslideshow', 'responsiveslideshow',
+        {'duration':'5',
+            'transSpeed': '1500',
+            'transType': 'fade',
+            'showButtons': true,
+            'showBullets': false,
+            'allowPause': false,
+            'allowLoop': false,
+            'showDescription': true,
+            'showTitle': true,
+            'crop': true
+        })|raw
+    }}
+</section>
+
+<div class="page-wrap">
+	<div class="wrapper">
+		<div class="mainzone headerwrapper">
+			{{zone('main')|raw}}
+		</div>
+	</div>
+</div>
+
+<footer class="bk-footer">
+	<div class="footer-border wrapper">
+		{{widget('contactform', 'thisunqiuewidgetname1', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+	</div>
+</footer>
+
+  <div class="widgetfooter clearfix">
+      <div class="wrapper">
+          <div class="left">
+          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+              {{widget('companyname', 'thisunqiuewidgetname', {"business": "profile"})|raw}}
+          </div>
+          <div class="right">
+              {{widget('profile', 'headercolumn1profileCopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}} 
+          </div>
+      </div>
+  </div>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-desktop
+Desktop
 =======
 
-Standard Basekit Template
+BaseKit Standard Template
