@@ -5,10 +5,10 @@
 
   <div class="widgetheader clearfix">
       <div class="wrapper">
-          <div class="left">
+          <div class="left-header">
               {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
           </div>
-          <div class="right">
+          <div class="right-header">
               {{widget('content', 'textwidgetbox1', {content: '<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut"</p>', lines: 'all'})|raw}}
           </div>
       </div>
@@ -54,21 +54,22 @@
 </div>
 
 <footer class="bk-footer">
-	<div class="footer-border wrapper">
-		{{widget('contactform', 'thisunqiuewidgetname1', {'text': 'Submit','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
-	</div>
-</footer>
-
-  <div class="widgetfooter clearfix">
-      <div class="wrapper">
-          <div class="left">
-          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-              {{widget('companyname', 'thisunqiuewidgetname', {"business": "profile"})|raw}}
-          </div>
-          <div class="right">
-              {{widget('profile', 'headercolumn1profileCopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}} 
-          </div>
-      </div>
-  </div>
+        <div class="wrapper clearfix">
+            <div class="responsivecolumns columns-two-50-50">
+                <div class="column columns-two-left">
+                  <div class="left-footer">
+                    {{widget('content', 'textwidgetbox2', {content: '<h4>Lorem ipsum</h4>', lines: 'all'})|raw}}
+                    {{widget('content', 'textwidgetbox3', {content: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut</p>', lines: 'all'})|raw}}
+                    </div>
+                </div>
+                <div class="column columns-two-right">
+                <div class="right-footer">
+                    {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons',   'socialicons':'profile'})|raw}}
+                    {{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright',   'copyright':'profile'})|raw}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 {% endblock %}

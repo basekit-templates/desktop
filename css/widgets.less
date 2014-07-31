@@ -32,6 +32,14 @@
 // Forms
 // -----------------------------
 
+input, textarea {
+	border:1px solid @color-swatch7;
+}
+
+input:focus, textarea:focus, .widget.profile form fieldset input:focus {
+	border-color:darken(@color-swatch7,5%);
+}
+
 input[type=text],
 input[type=email],
 .widget.profile form fieldset input,
@@ -43,6 +51,11 @@ textarea,
 	-moz-appearance: none;
 }
 
+.widget.profile form fieldset input {
+	height:55px;
+	border:1px solid @color-swatch7;
+}
+
 .widget.ecomcheckout .delivery select {
 }
 
@@ -52,8 +65,8 @@ textarea,
 .canvas .widget.profile form,
 .bottom-profile .widget.profile form,
 .delivery {
-	// Styles here
-	//
+	background-color:@color-swatch7;
+	padding:25px;
 	fieldset {
 		margin: 0;
 		input {
@@ -72,6 +85,15 @@ textarea,
 	}
 }
 
+.signupform fieldset input {
+	height: 62px;
+	border: 0;
+}
+
+.contactform textarea {
+	height:200px;
+}
+
 // -----------------------------
 // Buttons
 // -----------------------------
@@ -88,19 +110,56 @@ button.btn,
 .signupform fieldset button, 
 .contactform button.btn, 
 .btn,
-.widget.dropbox button,
 .blogsearch form button, 
 .checkout-order-button, 
 .checkout-empty-link,
-.widget.tweet a,
-.widget.paypalbuynow .widget.button.paypal,
 .blog-post-more-link a,
 .widget.ecombasket .ecombasket-pull,
 .ecombasket-checkout-link,
 .widget.ecomcheckout .checkout-order-button,
 .blog-list-footer a {
-	// Styles here
-	//
+	background-color:@font-swatch7-background-color;
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    color:@font-swatch7-color;
+    padding:15px 20px;
+}
+
+.widget.ecombasket .ecombasket-pull {
+	width: 142px;
+	padding: 15px 14px 15px 38px;
+	background-image: image('/images/ic-basket.png');
+	background-repeat: no-repeat;
+	background-position: 12% 48%;
+	background-size: 21px;
+}
+
+.widget.tweet a, .widget.dropbox button, .widget.paypalbuynow .widget.button.paypal {
+	padding:15px 20px 15px 40px;
+	background-color:@font-swatch7-background-color;
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    color:@font-swatch7-color;
+}
+
+.blog-post-more-link a {
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%)!important;
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%)!important;
+    padding:15px 20px!important;
+}
+
+.blogsearch form button {
+	border:0;
+	font-family: @font-swatch7-font-family;
+	font-size: @font-swatch7-font-size;
+	font-weight: @font-swatch7-font-weight;
+	line-height: @font-swatch7-line-height;
+	letter-spacing: @font-swatch7-letter-spacing;
+	color: @font-swatch7-color;
+}
+
+button:hover, .widget.button button:hover {
+	background-color:@font-swatch7-background-color-hover;
 }
 
 // PayPal, Dropbox, Tweet Overrides
@@ -138,7 +197,8 @@ button.btn,
 .widget.twitter {
 	margin: 20px 0;
 	img {
-		border-radius: 50%;
+		-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    	box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
 	}
 	p {
 		color: @color-swatch4;
@@ -153,6 +213,9 @@ button.btn,
 	li:last-child {
 		padding-bottom: 0;
 	}
+	span {
+		text-shadow: 3px 3px 0 fade(@color-swatch4,10%);
+	}
 	// Tweet Content
 	.twitter-profile-pic {
 		@media @tablet {
@@ -163,7 +226,10 @@ button.btn,
 	.twitter-content {
 		float: left;
 		.bk-full-name,
-		a, p a, span, a .bk-full-name {
+		a, p a, span, a {
+		}
+		.bk-full-name {
+			line-height:60px;
 		}
 		// Tweet Link
 		p a, a:hover span.bk-full-name {
@@ -196,6 +262,11 @@ button.btn,
 // -----------------------------
 
 .widget.responsiveslideshow {
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+}
+
+.widget.responsiveslideshow {
 	.btn-play, &:hover span.btn-play, 
 	.title, .description {
 		display: none;
@@ -205,8 +276,14 @@ button.btn,
 		// Buttons
 		.btns-move {
 			.btn-prev {
+				left:0;
+				background: @color-swatch1;
+				padding: 40px;
 			}
 			.btn-next {
+				right:0;
+				background: @color-swatch1;
+				padding: 40px;
 			}
 		}
 	}
@@ -221,7 +298,7 @@ button.btn,
 }
 
 .widget.responsiveslideshow .slideshow-image-list {
-	min-height: 600px;
+	min-height: 650px;
 }
 
 .widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
@@ -240,6 +317,13 @@ button.btn,
 		// height: 230px;
 		// min-height: 250px;
 	}
+}
+
+.widget.responsiveslideshow li.slideshow-image-item, 
+.widget.responsiveslideshow span.inner, 
+.widget.responsiveslideshow .image-wrapper, 
+.widget.responsiveslideshow .slideshow-image-item {
+	background-color:fade(@color-swatch3,90%);
 }
 
 // -----------------------------
@@ -346,8 +430,7 @@ button.btn,
 .menu .menu-items li.menu-item-promoted,
 .menu-subsection-promoted {
 	padding: 2em;
-	border: 2px solid darken(@color-swatch1,10%);
-	box-shadow:4px 4px 0 @color-swatch1, 6px 6px 0 darken(@color-swatch1,10%);
+	background-color:@color-swatch7;
 }
 
 // Nutritional Info
@@ -375,9 +458,9 @@ button.btn,
 // Dietary Icons
 .menu .menu-section-item-dietary-props .dietary-icon {
 	text-transform: uppercase;
-	padding: 1px 6px;
-	background-color: @color-swatch1;
-	border: 2px solid lighten(@color-swatch3,15%);
+	padding: 5px 6px 3px;
+	background-color: @color-swatch3;
+	border:0;
 	color: @font-swatch7-color;
 	font-family: @font-swatch7-font-family;
 	font-size: 11px;
@@ -418,8 +501,7 @@ button.btn,
 .blog-post-title a {
 	color: @color-swatch4;
 	&:hover {
-		color: @color-swatch2;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 }
 
@@ -452,9 +534,7 @@ button.btn,
 		color: @color-swatch1;
 		box-shadow: none;
 		&:hover {
-			background-color: @color-swatch1;
-			border-color: @color-swatch2;
-			color: @color-swatch4;
+			text-decoration:underline;
 		}
 	}
 }
@@ -488,9 +568,11 @@ button.btn,
 
 // Sharing Buttons
 .blog-post-sharing button {
-	padding: 1px 8px;
+	padding: 15px 20px;
 	box-shadow: none;
-	font-size: 12px;
+	font-size: 14px;
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
 }
 
 // Blog Search
@@ -508,8 +590,8 @@ button.btn,
 		color: @font-swatch4-color;
 	}
 	input {
-    	max-width: 170px;
-        height: 35px;
+    	width: 30%;
+        height: 55px;
         border: 1px solid darken(@color-swatch1,10%);
     	background-color: darken(@color-swatch1,4%);
     	-webkit-appearance: none;
@@ -522,17 +604,28 @@ button.btn,
         }
 	}
 	button {
-		position: relative;
-		top: -6px;
-		margin-right: 4px;
-		padding: 4px 14px!important;
+		padding:11px 15px;
 		&:hover {
 			cursor: pointer;
+			background-color:@font-swatch7-background-color-hover;
 		}
 	}
 }
 
+// Social Icons
 
+.widget.socialicons span a {
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+}
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+  min-height:32px;
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
+}
 
 
 

@@ -85,10 +85,9 @@
 	    padding: 8px 33px 8px 8px;
 	    -webkit-appearance: none;
 	    -moz-appearance: none;
-	    background-image: image('/images/select-arrow.svg');
+	    background-image: image('/images/arrow.png');
 	    background-repeat: no-repeat;
-	    background-size: 15px;
-	    background-position-x: 93%;
+	    background-position-x: 99%;
 	    background-position-y: 55%;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
@@ -160,10 +159,9 @@
             }
         }
         .btn {
-        	position: relative;
-        	top: -6px;
-        	margin: 0;
-            padding: 4px 14px;
+			position: relative;
+			margin: 0;
+			padding: 5px 14px 6px;
             @media @mobile {
             	margin-bottom: 10px;
             }
@@ -193,9 +191,8 @@
 		background-image: image('/images/ic-basket.png');
 		background-repeat: no-repeat;
         background-position: 11% 48%;
-        background-size: 14px;
+        background-size: 21px;
 		&:hover {
-			background-image: image('/images/ic-basket-hov.png');
 			&:hover {
 				p, .basket-count {
 					color: @color-swatch1;
@@ -320,9 +317,8 @@
         padding: 8px 33px 8px 8px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-image: image('/images/select-arrow.svg');
+        background-image: image('/images/arrow.png');
         background-repeat: no-repeat;
-        background-size: 15px;
         background-position-x: 93%;
         background-position-y: 55%;
 		-webkit-border-radius: 0;
@@ -349,14 +345,13 @@
 	}
 	// Add to Cart Button
 	.btn.ecom-product-add-to-cart-btn {
-		padding: 5px 10px 5px 14px;
+		padding: 15px 20px 15px 25px;
 		background-image: image('/images/ic-basket.png');
 		background-repeat: no-repeat;
 	    background-position: 8% 46%;
-	    background-size: 14px;
+	    background-size: 21px;
 	    font-size: 13px;
 	    &:hover {
-	    	background-image: image('/images/ic-basket-hov.png');
 	    }
 		.text:before {
 			margin: 0;
@@ -365,7 +360,7 @@
 		// Added
 		&.added {
 			background-image: image('/images/ic-tick.svg');
-			background-color: @color-swatch1;
+			background-color: @color-swatch2;
 			background-size: 20px;
 			border-color: #45D645;
 			box-shadow: none;
@@ -415,7 +410,7 @@
 		// Heading Row
 		tr:first-child {
 			outline: 1px solid darken(@color-swatch1,10%);
-	        background-color: darken(@color-swatch1,4%);
+	        background-color: @color-swatch7;
 	        -webkit-border-top-left-radius: 4px;
 			-webkit-border-top-right-radius: 4px;
 			-moz-border-radius-topleft: 4px;
@@ -502,9 +497,9 @@
 					margin-bottom: 20px;
 				}
 				button {
-					width: 20px;
-					height: 20px;
-					background-color: lighten(@color-swatch5,15%);
+					width: 25px;
+					height: 25px;
+					background-color: @color-swatch3;
 					font-size: 13px;
 					font-family: @font-swatch4-font-family;
 					color: @color-swatch1;
