@@ -308,6 +308,7 @@ button:hover, .widget.button button:hover {
 .widget.responsiveslideshow .content-wrapper {
 	position: relative;
 	top: 260px;
+	text-align:center;
 }
 
 // Responsive
@@ -326,50 +327,55 @@ button:hover, .widget.button button:hover {
 	background-color:fade(@color-swatch3,90%);
 }
 
+
 // -----------------------------
 // Gallery
 // -----------------------------
 
 .widget.gallery {
-	margin: 20px 0 20px -0.5%;
-	ul li {
-		@media @tablet {
-			width: 50%;
-			padding-bottom: 50%;
-		}
-		@media @mobile {
-			width: 100%;
-			padding-bottom: 100%;
-		}
-		span.inner {
-			.title,
-			.description {
-				margin-bottom: -57px;
-			} 
-			.title:hover {
-				margin-bottom: 0;
-			}
-			.title {
-				right: inherit;
-			}
-			a .title {
-				width: 94%;
-				border-right: 3px solid @color-swatch2;
-				background-color: @color-swatch1;
-				color: @font-swatch4-color;
-				font-family: @font-swatch4-font-family;
-				font-size: @font-swatch4-font-size;
-				font-weight: 600;
-				line-height: @font-swatch4-line-height;
-				letter-spacing: @font-swatch4-letter-spacing;
-				text-align: left;
-
-			}
-			a:hover .title {
-				margin-bottom: 20px;
-			}
-		}
-	}
+    margin: 20px 0 20px -0.5%;
+    ul li {
+        @media @tablet {
+            width: 50%;
+            padding-bottom: 50%;
+        }
+        @media @mobile {
+            width: 100%;
+            padding-bottom: 100%;
+        }
+        span.inner {
+            .title,
+            .description {
+                // Font
+                color: @color-swatch1;
+                font-family: @font-swatch4-font-family;
+                letter-spacing: @font-swatch4-letter-spacing;
+                text-align: left;
+            }
+            .title {
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 26px;
+            }
+            .description {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    // Image Data
+    .image-data {
+        display: block;
+        opacity: 0;
+        background-color: @color-swatch3;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 // -----------------------------

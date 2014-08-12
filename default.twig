@@ -2,7 +2,7 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-
+<div class="bk-pt-default">
   <div class="widgetheader clearfix">
       <div class="wrapper">
           <div class="left-header">
@@ -23,10 +23,8 @@
     </div>
 </header> 
 
-<div class="navbar wrapper clearfix">
-    <div class="wrapper">
-        {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
-    </div>
+<div class="navbar clearfix">
+        {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
 </div>
 
 <div class="page-wrap">
@@ -55,5 +53,6 @@
             </div>
         </div>
     </footer>
+</div>
 
 {% endblock %}
