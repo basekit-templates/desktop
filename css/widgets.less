@@ -279,11 +279,15 @@ button:hover, .widget.button button:hover {
 				left:0;
 				background: @color-swatch1;
 				padding: 40px;
+				-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
+    			box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
 			}
 			.btn-next {
 				right:0;
 				background: @color-swatch1;
 				padding: 40px;
+				-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
+    			box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
 			}
 		}
 	}
@@ -473,6 +477,20 @@ button:hover, .widget.button button:hover {
 	font-weight: @font-swatch7-font-weight;
 	line-height: @font-swatch7-line-height;
 	letter-spacing: @font-swatch7-letter-spacing;
+}
+
+.menu-item-promoted {
+  background-color: darken(@color-swatch1,6%);
+  padding:20px!important;
+  -webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,20%);
+  box-shadow: 3px 3px 0 1px fade(@color-swatch4,20%);
+}
+
+.menu-subsection-wrapper.menu-subsection-promoted {
+  background-color: darken(@color-swatch1,6%);
+  padding:40px;
+  -webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,20%);
+  box-shadow: 3px 3px 0 1px fade(@color-swatch4,20%);
 }
 
 // -----------------------------
