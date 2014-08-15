@@ -21,6 +21,10 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 10%;
+    @media @mobile {
+        width:90%;
+        margin: 0 5%;
+    }
 }
 
 ul, li {
@@ -109,7 +113,7 @@ header.bk-header {
     margin-top:8px;
 }
 
-.widget.companyname a, h1, h2, h3, h4, h5, .contactform label, .widget .extendednavigation ul li a, button.btn {
+.widget.companyname a, h1, h2, h3, h4, h5, .contactform label, .widget .extendednavigation ul li a, button.btn, .widget.clicktocall a {
     text-shadow: 3px 3px 0 fade(@color-swatch4,10%);
 }
 

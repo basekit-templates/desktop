@@ -88,6 +88,9 @@ textarea,
 .signupform fieldset input {
 	height: 62px;
 	border: 0;
+	@media @mobile {
+		width: 71%;
+	}
 }
 
 .contactform textarea {
@@ -123,6 +126,18 @@ button.btn,
     box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
     color:@font-swatch7-color;
     padding:15px 20px;
+}
+
+.widget.clicktocall a {
+	background-color:@font-swatch7-background-color;
+	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    color:@font-swatch7-color;
+    padding:15px 20px 15px 40px;
+    &:hover {
+    	padding:15px 20px 15px 40px;
+    	background-color:@font-swatch7-background-color-hover;
+    }
 }
 
 .widget.ecombasket .ecombasket-pull {
