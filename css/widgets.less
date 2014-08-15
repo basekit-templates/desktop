@@ -281,6 +281,12 @@ button:hover, .widget.button button:hover {
 				padding: 40px;
 				-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
     			box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    			@media @tablet {
+    				padding:30px;
+    			}
+    			@media @mobile {
+    				padding:20px;
+    			}
 			}
 			.btn-next {
 				right:0;
@@ -288,6 +294,12 @@ button:hover, .widget.button button:hover {
 				padding: 40px;
 				-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
     			box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    			@media @tablet {
+    				padding:30px;
+    			}
+    			@media @mobile {
+    				padding:20px;
+    			}
 			}
 		}
 	}
@@ -307,12 +319,42 @@ button:hover, .widget.button button:hover {
 
 .widget.responsiveslideshow .title, .widget.responsiveslideshow .description {
 	display: inline-block;
+	width:100%;
+}
+
+.widget.responsiveslideshow .title {
+	color: @font-swatch8-color;
+	font-family: @font-swatch8-font-family;
+	font-size: @font-swatch8-font-size;
+	font-weight: @font-swatch8-font-weight;
+	line-height: @font-swatch8-line-height;
+	letter-spacing: @font-swatch8-letter-spacing;
+	@media @mobile {
+		font-size:bkscale(@font-swatch8-font-size, 0.6);
+		line-height:bkscale(@font-swatch8-line-height, 0.6);
+	}
+}
+
+.widget.responsiveslideshow .description{
+	color: @font-swatch9-color;
+	font-family: @font-swatch9-font-family;
+	font-size: @font-swatch9-font-size;
+	font-weight: @font-swatch9-font-weight;
+	line-height: @font-swatch9-line-height;
+	letter-spacing: @font-swatch9-letter-spacing;
+	@media @mobile {
+		font-size:bkscale(@font-swatch9-font-size, 0.6);
+		line-height:bkscale(@font-swatch9-line-height, 0.6);
+	}
 }
 
 .widget.responsiveslideshow .content-wrapper {
 	position: relative;
 	top: 260px;
 	text-align:center;
+	@media @mobile {
+		top:170px;
+	}
 }
 
 // Responsive
@@ -321,6 +363,18 @@ button:hover, .widget.button button:hover {
 	@media @mobile {
 		// height: 230px;
 		// min-height: 250px;
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget {
+	@media @tablet {
+		height:auto;
+	}
+}
+
+.widget.responsiveslideshow .slideshow-image-list {
+	@media @mobile{
+		min-height: 400px;
 	}
 }
 
@@ -433,6 +487,10 @@ button:hover, .widget.button button:hover {
 			max-height: 180px;
 		}
 	}
+}
+
+.menu-header {
+	margin-bottom:20px;
 }
 
 // Promoted Item

@@ -106,7 +106,7 @@ header.bk-header {
 }
 
 .widget.companyname {
-    margin-top:15px;
+    margin-top:8px;
 }
 
 .widget.companyname a, h1, h2, h3, h4, h5, .contactform label, .widget .extendednavigation ul li a, button.btn {
@@ -156,7 +156,6 @@ header.bk-header {
     vertical-align: bottom;
     @media only screen and (max-width: 900px) {
         display: block;
-        margin-top: 15px;
         width: 100%;
     }
     @media @tablet {
@@ -169,9 +168,10 @@ header.bk-header {
         li {
         margin:0;
         padding:0;
-            @media @mobile {
+            @media @tablet {
                 padding: 0;
                 margin: 0;
+                border-bottom:0;
             }
         }
     }
@@ -179,6 +179,9 @@ header.bk-header {
 
 .widget .extendednavigation ul li:hover ul {
     background-color:lighten(@color-swatch4,15%);
+    @media @tablet {
+        margin:0;
+    }
 }
 
 .widget .extendednavigation ul li.folder:after {
@@ -211,6 +214,12 @@ header.bk-header {
             margin:0px auto;
             left:0;
         }
+    }
+}
+
+.widget .extendednavigation a.pull {
+    @media @tablet {
+        left:-15px;
     }
 }
 

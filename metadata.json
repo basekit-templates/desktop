@@ -1,11 +1,47 @@
 {
-	"name":"Template Name",
+	"name":"Desktop",
 	"thumbnail":"template-name.png",
 	"screenshot":"template-name.png",
     "tags": { "en": ["minimal", "clean"] },
     "pageTypes":["home"],
     "colorSwatches":
     {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#e03531",
+            "color4":"#291716",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#e5e5e5"
+        },
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#e03531",
+            "color4":"#291716",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#e5e5e5"
+        },
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#e03531",
+            "color4":"#291716",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#e5e5e5"
+        },
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#e03531",
+            "color4":"#291716",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#e5e5e5"
+        },
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#01b4f0",
@@ -84,17 +120,17 @@
         },
         "font8": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "34px",
+            "font-size": "42px",
             "font-weight": "700",
-            "line-height": "36px",
+            "line-height": "52px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font9": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
-            "font-size": "20px",
+            "font-size": "28px",
             "font-weight": "inherit",
-            "line-height": "28px",
+            "line-height": "38px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
