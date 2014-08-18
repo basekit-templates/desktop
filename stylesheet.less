@@ -48,10 +48,15 @@ ul, li {
 
 .widgetheader .right-header {
     float:right;
+    max-width:50%;
+    @media @tablet {
+        max-width:100%;
+        width:100%;
+    }
 }
 
 .widgetheader .widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {
-    @media @mobile {
+    @media @tablet {
         text-align:center;
         float:none;
         margin: 0px auto;
@@ -229,6 +234,12 @@ header.bk-header {
     @media @tablet {
         top: -8px;
     }
+}
+
+.widget.extendednavigation .bk-overlay {
+    width:100%;
+    left:auto;
+    top:-15px;
 }
 
 // -----------------------------
