@@ -251,22 +251,31 @@ footer.bk-footer {
     }
 }
 
-.left-footer .widget.content h4, .left-footer .widget.content p, .left-footer .widget.content span, .right-footer .widget.profile span {
+.left-footer .widget.content h4, 
+.left-footer .widget.content p, 
+.left-footer .widget.content span, 
+.right-footer .widget.profile span, 
+.right-footer .widget.profile p, 
+.right-footer .widget.profile a {
     color:@font-swatch7-color;
 }
 
-.bk-profile-copyright {
+footer.bk-footer .bk-profile-copyright {
     width:100%;
     text-align:right;
-}
-
-.widget.profile .bk-profile-socialicons, .widget.profile span, .widget.profile p {
     float:right;
 }
 
-.bk-profile-email a {
+.bk-profile-address p {
     float:right;
-    color:@font-swatch5-color;
+    font-weight: @font-swatch4-font-weight;
+    color: @font-swatch1-color;
+    float:left;
+    padding-right:5px;
+}
+
+.widget.profile .bk-profile-socialicons, .widget.profile p {
+    float:right;
 }
 
 .left-footer {
