@@ -145,14 +145,6 @@ header.bk-header {
     }
 }
 
-
-.navbar.wrapper { 
-    @media @tablet {
-        width:100%;
-        margin:0;
-    }
-}
-
 .widget.extendednavigation {
     display: inline-block;
     position: relative;
@@ -182,7 +174,9 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li:hover ul {
-    background-color:lighten(@color-swatch4,15%);
+    background-color:@color-swatch4;
+    -webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
     @media @tablet {
         margin:0;
     }

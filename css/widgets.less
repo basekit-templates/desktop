@@ -128,16 +128,16 @@ button.btn,
     padding:15px 20px;
 }
 
+
 .widget.clicktocall a {
-	background-color:@font-swatch7-background-color;
-	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
-    box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
-    color:@font-swatch7-color;
-    padding:15px 20px 15px 40px;
-    &:hover {
-    	padding:15px 20px 15px 40px;
-    	background-color:@font-swatch7-background-color-hover;
-    }
+	@media @mobile {
+		padding:15px 20px 15px 40px;
+		-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    	box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+		&:hover {
+			padding:15px 20px 15px 40px;
+		}
+	}
 }
 
 .widget.ecombasket .ecombasket-pull {
