@@ -4,9 +4,7 @@
 	"screenshot":"desktop.png",
     "tags": { "en": ["minimal", "clean", "slideshow", "red", "portfolio", "box-shadow", "bright", "art", "design"] },
     "pageTypes":["home"],
-    "images":[
-       "images/slideshow-img.jpg"
-    ],
+    "templateType":"standard",
     "colorSwatches":
     {
         "Swatch 1": {
