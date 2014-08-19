@@ -100,6 +100,9 @@ header.bk-header {
     padding:60px 0px 40px;
     margin: 0px auto;
     display: table;
+    @media @mobile {
+        padding:25px 0px 0px;
+    }
 }
 
 .left-header {
@@ -128,6 +131,9 @@ header.bk-header {
     &.logo, &.companyname {
         display: inline-block;
         float:left;
+        @media @mobile {
+            float:none;
+        }
     }
     &.logo img {
         vertical-align: bottom;
@@ -137,6 +143,9 @@ header.bk-header {
 .widget.companyname {
     margin-top:8px;
     margin-left:5px;
+    @media @mobile {
+        margin-top:0;
+    }
 }
 
 .widget.companyname a, h1, h2, h3, h4, h5, .contactform label, .widget .extendednavigation ul li a, button.btn, .widget.clicktocall a {

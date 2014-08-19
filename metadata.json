@@ -1,9 +1,12 @@
 {
 	"name":"Desktop",
-	"thumbnail":"template-name.png",
-	"screenshot":"template-name.png",
-    "tags": { "en": ["minimal", "clean"] },
+	"thumbnail":"desktop.png",
+	"screenshot":"desktop.png",
+    "tags": { "en": ["minimal", "clean", "slideshow", "red", "portfolio", "box-shadow", "bright", "art", "design"] },
     "pageTypes":["home"],
+    "images":[
+       "images/slideshow-img.jpg"
+    ],
     "colorSwatches":
     {
         "Swatch 1": {
