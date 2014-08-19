@@ -86,16 +86,36 @@ textarea,
 	}
 }
 
+.signupform {
+	max-width:50%;
+	margin-bottom:10px;
+	@media @tablet {
+		max-width:100%;
+	}
+	@media @mobile {
+		max-width:100%;
+	}
+}
+
 .signupform fieldset input {
 	height: 62px;
 	border: 0;
+	width:100%;
 	@media @mobile {
-		width: 71%;
+		width:100%;
 	}
+}
+
+.signupform fieldset button {
+	margin-top:10px;
 }
 
 .contactform textarea {
 	height:200px;
+}
+
+input,textarea {
+	text-indent:5px;
 }
 
 // -----------------------------
@@ -425,6 +445,7 @@ body.edit .slideshow-empty {
 .widget.responsiveslideshow .image-wrapper, 
 .widget.responsiveslideshow .slideshow-image-item {
 	background-color:fade(@color-swatch3,90%);
+
 }
 
 
