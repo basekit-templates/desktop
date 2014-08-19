@@ -54,6 +54,7 @@ textarea,
 .widget.profile form fieldset input {
 	height:55px;
 	border:1px solid @color-swatch7;
+	background-color:@color-swatch1;
 }
 
 .widget.ecomcheckout .delivery select {
@@ -276,6 +277,10 @@ button:hover, .widget.button button:hover {
 // Slideshow
 // -----------------------------
 
+body.edit .slideshow-empty {
+	padding-top: 50px;
+}
+
 .widget.responsiveslideshow {
 	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
     box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
@@ -344,9 +349,13 @@ button:hover, .widget.button button:hover {
 	font-weight: @font-swatch8-font-weight;
 	line-height: @font-swatch8-line-height;
 	letter-spacing: @font-swatch8-letter-spacing;
-	@media @mobile {
+	@media @tablet {
 		font-size:bkscale(@font-swatch8-font-size, 0.6);
-		line-height:bkscale(@font-swatch8-line-height, 0.6);
+		line-height:bkscale(@font-swatch8-line-height, 0.5);
+	}
+	@media @mobile {
+		font-size:bkscale(@font-swatch9-font-size, 0.5);
+		line-height:bkscale(@font-swatch9-line-height, 0.4);
 	}
 }
 
@@ -357,9 +366,13 @@ button:hover, .widget.button button:hover {
 	font-weight: @font-swatch9-font-weight;
 	line-height: @font-swatch9-line-height;
 	letter-spacing: @font-swatch9-letter-spacing;
+	@media @tablet {
+		font-size:bkscale(@font-swatch8-font-size, 0.6);
+		line-height:bkscale(@font-swatch8-line-height, 0.5);
+	}
 	@media @mobile {
-		font-size:bkscale(@font-swatch9-font-size, 0.6);
-		line-height:bkscale(@font-swatch9-line-height, 0.6);
+		font-size:bkscale(@font-swatch9-font-size, 0.5);
+		line-height:bkscale(@font-swatch9-line-height, 0.4);
 	}
 }
 
