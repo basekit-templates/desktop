@@ -28,26 +28,25 @@
 </div>
 
 <section>
-    {{widget('responsiveslideshow', 'responsiveslideshow',
-        {'duration':'5',
-            'transSpeed': '1500',
-            'transType': 'fade',
-            'showButtons': true,
-            'showBullets': false,
-            'allowPause': false,
-            'allowLoop': false,
-            'showDescription': true,
-            'showTitle': true,
-            'crop': true,
-                            'images': [
-                    {'url':asset('/images/slideshow/img-1.jpg')},
-                    {'url':asset('/images/slideshow/News_01.jpg')},
-                    {'url':asset('/images/slideshow/News_02.jpg')},
-                    {'url':asset('/images/slideshow/News_03.jpg')},
-                    {'url':asset('/images/slideshow/News_01.jpg')}
+        {{widget('responsiveslideshow', 'responsiveslideshow',
+            {'duration':'5',
+                'transSpeed': '1500',
+                'transType': 'fade',
+                'showButtons': true,
+                'showBullets': false,
+                'allowPause': false,
+                'allowLoop': true,
+                'showDescription': true,
+                'showTitle': true,
+                'images': [
+                    {'url':asset('images/slideshow/Home_Page_Cutting_03.jpg')},
+                    {'url':asset('images/slideshow/News_01.jpg')},
+                    {'url':asset('images/slideshow/News_02.jpg')},
+                    {'url':asset('images/slideshow/News_03.jpg')},
+                    {'url':asset('images/slideshow/News_01.jpg')}
                 ]
-        })|raw
-    }}
+            })|raw
+        }}
 </section>
 
 <div class="page-wrap">
