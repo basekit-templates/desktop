@@ -172,7 +172,6 @@ header.bk-header {
     bottom: -25px;
     z-index: 9999;
     @media @tablet {
-        padding:20px 0px;
         bottom: -20px;
     }
 }
@@ -191,10 +190,14 @@ header.bk-header {
     }
     @media @tablet {
         margin-top: 0;
+        padding:20px 0px;
     }
     ul {
         @media only screen and (max-width: 900px) {
             float: none;
+        }
+        @media @tablet {
+            padding-top:30px;
         }
         li {
         margin:0;
@@ -250,11 +253,6 @@ header.bk-header {
     }
 }
 
-.widget .extendednavigation a.pull {
-    @media @tablet {
-        left:-15px;
-    }
-}
 
 .widget .extendednavigation a.pull {
     &:after {
@@ -262,7 +260,8 @@ header.bk-header {
         box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
     }
     @media @tablet {
-        top: -8px;
+        top: 12px;
+        left:-15px;
     }
 }
 
