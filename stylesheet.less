@@ -117,6 +117,10 @@ header.bk-header {
     }
 }
 
+.left-header .bk-profile-email {
+    text-align:center;
+}
+
 .widget.content .bk-content-text {
     overflow: inherit;
 }
@@ -292,9 +296,13 @@ footer.bk-footer {
     }
 }
 
+.left-footer .widget.content h1,
+.left-footer .widget.content h2,
+.left-footer .widget.content h3,
 .left-footer .widget.content h4, 
 .left-footer .widget.content p, 
-.left-footer .widget.content span, 
+.left-footer .widget.content span,
+.left-footer .widget.content a,  
 .right-footer .widget.profile span, 
 .right-footer .widget.profile p, 
 .right-footer .widget.profile a {
@@ -303,6 +311,10 @@ footer.bk-footer {
 
 .right-footer {
     float:left;
+    @media @mobile {
+        float:none;
+        text-align:center;
+    }
 }
 
 footer.bk-footer .widget.profile p, footer.bk-footer .widget.profile p
@@ -345,6 +357,9 @@ footer.bk-footer .widget.profile .bk-profile-socialicons, .widget.profile span, 
 .footer-profile {
     display:inline-block;
     float:left;
+    @media @mobile {
+        float:none;
+    }
 }
 
 .footer-profile .widget.profile form {
