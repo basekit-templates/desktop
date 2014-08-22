@@ -639,22 +639,20 @@ body.edit .slideshow-empty {
 }
 
 .widget.responsiveslideshow .title {
-	line-height: @font-swatch8-line-height;
 	@media @tablet {
 		font-size:bkscale(@font-swatch8-font-size, 0.6);
-		line-height:bkscale(@font-swatch8-line-height, 0.8);
 	}
 	@media @mobile {
 		font-size:bkscale(@font-swatch8-font-size, 0.5);
-		line-height:bkscale(@font-swatch8-line-height, 0.5);
+		padding-bottom:0;
 	}
 }
 
 .widget.responsiveslideshow .description{
-	line-height: @font-swatch7-line-height;
 	@media @tablet {
 		font-size:bkscale(@font-swatch9-font-size, 0.6);
 		line-height:bkscale(@font-swatch9-line-height, 0.8);
+		padding-bottom: 5px;
 	}
 	@media @mobile {
 		font-size:bkscale(@font-swatch9-font-size, 0.5);
