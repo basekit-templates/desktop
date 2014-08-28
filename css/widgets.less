@@ -252,12 +252,6 @@ button:hover, .widget.button button:hover {
 		text-shadow: 3px 3px 0 fade(@color-swatch4,10%);
 	}
 	// Tweet Content
-	.twitter-profile-pic {
-		@media @tablet {
-			width: 100%;
-			margin-right: 0;
-		}
-	}
 	.twitter-content {
 		.bk-full-name,
 		a, p a, span, a {
@@ -481,7 +475,7 @@ body.edit .slideshow-empty {
                 @media @mobile {
                     top: 12px;
 					font-size: 30px;
-					left: -9px;
+					left: -5px;
                 }
             }
         }
@@ -501,7 +495,7 @@ body.edit .slideshow-empty {
                 @media @mobile {
                     top: 12px;
 					font-size: 30px;
-					left: 15px;
+					left: 10px;
                 }
             }
         }
@@ -980,6 +974,12 @@ body.edit .slideshow-empty {
 
 .widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
   text-align:center;
+}
+
+.bk-profile-socialicons span {
+	@media @tablet {
+		width:0!important;
+		}
 }
 
 
