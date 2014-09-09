@@ -248,17 +248,6 @@ header.bk-header {
     }
 }
 
-.widget .extendednavigation {
-    @media @tablet {
-        a.pull {
-            top:0;
-            display: table;
-            margin:0px auto;
-            left:0;
-        }
-    }
-}
-
 
 .widget .extendednavigation a.pull {
     &:after {
@@ -267,7 +256,11 @@ header.bk-header {
     }
     @media @tablet {
         top: 12px;
-        left:-15px;
+        left:12px;
+        display: table;
+        margin:0px auto;
+        right:inherit;
+        width:50%;
     }
 }
 
