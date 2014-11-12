@@ -517,6 +517,7 @@ body.edit .slideshow-empty {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+            display:none!important;
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
@@ -620,11 +621,11 @@ body.edit .slideshow-empty {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
-            display:none!important;
             &:after {
                 color: #fff;
-                letter-spacing: -4px;
-                top: 0;
+                letter-spacing: 1px;
+                top: -1px;
+                left 2px;
             }
         }
     }
@@ -641,6 +642,10 @@ body.edit .slideshow-empty {
             }
         }
     }
+}
+
+.widget.responsiveslideshow .btn-play:after {
+	left:2px;
 }
 
 .widget.responsiveslideshow .title {
@@ -922,10 +927,6 @@ body.edit .slideshow-empty {
 
 .blog-post-tag a {
 	color: @color-swatch2;
-}
-
-.blog-post-tag a:after {
-	content: ',';
 }
 
 // Sharing Buttons
