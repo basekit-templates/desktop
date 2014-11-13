@@ -81,9 +81,14 @@ textarea,
 	margin: 0;
 	padding: 0;
 	border: 0;
-	fieldset input {
-		
-	}
+}
+
+.widget.profile form button {
+	margin-left:-4px;
+}
+
+.widget.signupform {
+	display:inline-block;
 }
 
 .signupform {
@@ -99,7 +104,7 @@ textarea,
 .signupform fieldset input {
 	height: 62px;
 	border: 0;
-	width:100%;
+	width:75%;
 	@media @mobile {
 		width:100%;
 	}
@@ -107,6 +112,10 @@ textarea,
 
 .signupform fieldset label {
 	text-shadow: 3px 3px 0 rgba(41,23,22,0.1);
+	margin-bottom:0;
+	@media @mobile {
+		margin-bottom:0;
+	}
 }
 
 .signupform fieldset button {
@@ -320,6 +329,9 @@ body.edit .slideshow-empty {
 .feature-slideshow .widget.responsiveslideshow {
 	-webkit-box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);;
     box-shadow: 3px 3px 0 1px fade(@color-swatch4,10%);
+    @media @mobile {
+    	box-shadow: none;
+    }
 }
 
 .feature-slideshow .widget.responsiveslideshow .slideshow-image-list {
@@ -417,7 +429,7 @@ body.edit .slideshow-empty {
 .feature-slideshow .widget.responsiveslideshow span.inner, 
 .feature-slideshow .widget.responsiveslideshow .image-wrapper, 
 .feature-slideshow .widget.responsiveslideshow .slideshow-image-item {
-	background-color:fade(@color-swatch3,90%);
+	background-color:fade(@color-swatch3,60%);
 
 }
 
@@ -518,6 +530,14 @@ body.edit .slideshow-empty {
             -moz-border-radius: 4px;
             border-radius: 4px;
             display:none!important;
+            @media @tablet {
+				width: 12%;
+				left: 44%;
+				}
+			@media @mobile {
+				width: 16%;
+				left: 42%;
+			}
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
@@ -621,6 +641,14 @@ body.edit .slideshow-empty {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+            @media @tablet {
+				width: 12%;
+				left: 44%;
+				}
+			@media @mobile {
+				width: 16%;
+				left: 42%;
+			}
             &:after {
                 color: #fff;
                 letter-spacing: 1px;
@@ -950,6 +978,8 @@ body.edit .slideshow-empty {
 		line-height: @font-swatch4-line-height;
 		letter-spacing: @font-swatch4-letter-spacing;
 		color: @font-swatch4-color;
+		display:block;
+		margin-bottom:10px;
 	}
 	input {
     	width: 30%;
@@ -959,7 +989,7 @@ body.edit .slideshow-empty {
     	-webkit-appearance: none;
         -moz-appearance: none;
         -webkit-border-radius: 0;
-        @media @mobile {
+        @media @tablet {
             width: 100%;
             max-width: 100%;
             margin-bottom: 12px;
@@ -973,6 +1003,11 @@ body.edit .slideshow-empty {
 		}
 	}
 }
+
+.btn.facebook, .btn.twitter {
+	margin-right:5px;
+}
+
 
 // Social Icons
 
