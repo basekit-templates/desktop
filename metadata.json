@@ -1,7 +1,7 @@
 {
 	"name":"Desktop",
 	"thumbnail":"desktop.png",
-	"screenshot":"desktop.png",
+	"screenshot":"desktop-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "slideshow", "red", "portfolio", "box-shadow", "bright", "art", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
