@@ -5,6 +5,10 @@
     "tags": { "en": ["minimal", "clean", "slideshow", "red", "portfolio", "box-shadow", "bright", "art", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
+    "images":[
+        "images/feature-bg.jpg",
+        "images/logo.png"
+    ],
     "colorSwatches":
     {
         "Swatch 1": {
@@ -53,9 +57,6 @@
             "color7":"#eeeeee"
         }
     },
-    "images":[
-        "images/test.jpg"
-    ],
     "fontSwatch": {
        "title": "Raleway",
         "font1": {
