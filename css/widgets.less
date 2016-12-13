@@ -28,6 +28,9 @@
 	}
 }
 
+
+
+
 // -----------------------------
 // Forms
 // -----------------------------
@@ -65,7 +68,8 @@ textarea,
 .signupform,
 .canvas .widget.profile form,
 .bottom-profile .widget.profile form,
-.delivery {
+.delivery,
+.advancedcontactform {
 	background-color:@color-swatch7;
 	padding:25px;
 	fieldset {
@@ -134,6 +138,57 @@ input,textarea {
 	margin-bottom:5px;
 }
 
+// Advanced Contact Form
+.advancedcontactform {
+    .label {
+        margin-bottom: 10px;
+    }
+    .input {
+        width: 100%;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    select {
+        display: block;
+        width: auto;
+        height: 35px;
+        padding: 8px 33px 8px 8px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: 1px solid darken(@color-swatch1,10%);
+        background-color: @color-swatch1;
+        text-indent: 0.01px;
+        text-overflow: '';
+        color: @color-swatch5;
+        cursor: pointer;
+        border-color:darken(@color-swatch7,5%);
+        &:focus {
+            outline: 0;
+        }
+        @media @mobile {
+            width: 100%;
+        }
+        &::-ms-expand {
+            display: none;
+        }
+        &[name="displayCount"] {
+            margin-bottom: 0;
+        }
+    }
+    .input--checkbox,
+    .input--radio {
+        box-shadow: none;
+    }
+    button {
+        margin-top: 10px;
+    }
+}
+
+
+
+
 // -----------------------------
 // Buttons
 // -----------------------------
@@ -157,7 +212,8 @@ button.btn,
 .widget.ecombasket .ecombasket-pull,
 .ecombasket-checkout-link,
 .widget.ecomcheckout .checkout-order-button,
-.blog-list-footer a {
+.blog-list-footer a,
+.advancedcontactform button {
 	background-color:@font-swatch7-background-color;
 	-webkit-box-shadow: 3px 3px 0 1px darken(@color-swatch7,5%);
     box-shadow: 3px 3px 0 1px darken(@color-swatch7,5%);
@@ -241,6 +297,9 @@ button:hover, .widget.button button:hover {
 		}
 	}
 }
+
+
+
 
 // -----------------------------
 // Twitter Feed
