@@ -1,5 +1,6 @@
 {
 	"name":"Desktop",
+	"versionTenCompatible": 1,
 	"thumbnail":"desktop.png",
 	"screenshot":"desktop-screenshot.jpg",
     "tags": { "en": ["minimal", "clean", "slideshow", "red", "portfolio", "box-shadow", "bright", "art", "design"] },
